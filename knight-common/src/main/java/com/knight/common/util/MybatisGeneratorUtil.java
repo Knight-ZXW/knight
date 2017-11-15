@@ -11,7 +11,8 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-import static com.zheng.common.util.StringUtil.lineToHump;
+import static com.knight.common.util.StringUtil.lineToHump;
+
 
 /**
  * 代码生成类
@@ -124,7 +125,7 @@ public class MybatisGeneratorUtil {
 		String servicePath = basePath + module + "/" + module + "-rpc-api" + "/src/main/java/" + package_name.replaceAll("\\.", "/") + "/rpc/api";
 		String serviceImplPath = basePath + module + "/" + module + "-rpc-service" + "/src/main/java/" + package_name.replaceAll("\\.", "/") + "/rpc/service/impl";
 		for (int i = 0; i < tables.size(); i++) {
-			String model = StringUtil.lineToHump(ObjectUtils.toString(tables.get(i).get("table_name")));
+			String model = lineToHump(ObjectUtils.toString(tables.get(i).get("table_name")));
 			String service = servicePath + "/" + model + "Service.java";
 			String serviceMock = servicePath + "/" + model + "ServiceMock.java";
 			String serviceImpl = serviceImplPath + "/" + model + "ServiceImpl.java";

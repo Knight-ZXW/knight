@@ -10,7 +10,6 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>knight-common</module>
-        <module>knight-api</module>
         <module>knight-site</module>
     </modules>
 

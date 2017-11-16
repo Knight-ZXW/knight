@@ -10,6 +10,9 @@
     <version>1.0.0</version>
     <modules>
         <module>knight-ucenter-dao</module>
+        <module>knight-ucenter-common</module>
+        <module>knight-ucenter-rpc-service</module>
+        <module>knight-ucenter-rpc-api</module>
     </modules>
     <packaging>pom</packaging>
 

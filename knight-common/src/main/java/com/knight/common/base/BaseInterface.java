@@ -2,7 +2,7 @@ package com.knight.common.base;
 
 /**
  * 系统接口
- * Created by ZhangShuzheng on 2017/6/13.
+ * Created by ZhangShuknight on 2017/6/13.
  */
 public interface BaseInterface {
 

@@ -2,7 +2,7 @@ package com.knight.common.base;
 
 /**
  * 统一返回结果类
- * Created by shuzheng on 2017/2/18.
+ * Created by shuknight on 2017/2/18.
  */
 public class BaseResult {
 

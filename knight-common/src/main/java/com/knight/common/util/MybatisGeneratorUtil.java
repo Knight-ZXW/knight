@@ -10,13 +10,11 @@ import org.mybatis.generator.internal.DefaultShellCallback;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.*;
-
-import static com.knight.common.util.StringUtil.lineToHump;
-
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * 代码生成类
- * Created by ZhangShuzheng on 2017/1/10.
  */
 public class MybatisGeneratorUtil {
 
@@ -173,6 +171,30 @@ public class MybatisGeneratorUtil {
 			}
 		}
 		dir.delete();
+	}
+
+
+	/**
+	 * 下划线转驼峰
+	 * @param str
+	 * @return
+	 */
+	public static String lineToHump(String str) {
+		if (null == str || "".equals(str)) {
+			return str;
+		}
+		str = str.toLowerCase();
+		Matcher matcher = Pattern.compile("_(\\w)").matcher(str);
+		StringBuffer sb = new StringBuffer();
+		while (matcher.find()) {
+			matcher.appendReplacement(sb, matcher.group(1).toUpperCase());
+		}
+		matcher.appendTail(sb);
+
+		str = sb.toString();
+		str = str.substring(0, 1).toUpperCase() + str.substring(1);
+
+		return str;
 	}
 
 }

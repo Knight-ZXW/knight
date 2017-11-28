@@ -13,6 +13,7 @@
         <module>knight-ucenter-common</module>
         <module>knight-ucenter-rpc-service</module>
         <module>knight-ucenter-rpc-api</module>
+        <module>knight-ucenter-web</module>
     </modules>
     <packaging>pom</packaging>
 

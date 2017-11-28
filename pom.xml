@@ -12,6 +12,7 @@
         <module>knight-common</module>
         <module>knight-site</module>
         <module>knight-ucenter</module>
+        <module>knight-api</module>
     </modules>
 
     <properties>

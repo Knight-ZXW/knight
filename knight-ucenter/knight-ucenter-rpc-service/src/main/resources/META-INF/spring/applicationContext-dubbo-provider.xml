@@ -9,7 +9,7 @@
 
     <dubbo:application name="knight-ucenter-rpc-service"/>
 
-    <dubbo:registry address="zookeeper://zkserver:2181"/>
+    <dubbo:registry address="zookeeper://localhost:4180"/>
 
     <dubbo:protocol name="dubbo" port="20884"/>
 

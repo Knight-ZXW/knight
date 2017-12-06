@@ -80,7 +80,7 @@
     </bean>
 
     <!-- 动态数据源 -->
-    <bean id="dataSource" class="com.zheng.common.db.DynamicDataSource">
+    <bean id="dataSource" class="com.knight.common.db.DynamicDataSource">
         <property name="targetDataSources">
             <map key-type="java.lang.String">
                 <!-- 可配置多个数据源 -->

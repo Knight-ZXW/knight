@@ -9,7 +9,7 @@
 
     <dubbo:application name="knight-ucenter-web"/>
 
-    <dubbo:registry file="./knight-ucenter-web-dubbo.cache" address="zookeeper://zkserver:2181"/>
+    <dubbo:registry file="./knight-ucenter-web-dubbo.cache" address="zookeeper://zkserver:4180"/>
 
     <!-- 订阅服务 -->
     <dubbo:consumer check="false"/>

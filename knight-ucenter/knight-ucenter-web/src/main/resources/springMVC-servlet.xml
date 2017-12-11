@@ -10,6 +10,29 @@
 
 	<!-- 根目录'/'对应页面 -->
 	<mvc:view-controller path="/" view-name="/index.jsp"/>
+    <!--已经在基础组件配置-->
+	<!--<context:component-scan base-package="com.knight.ucenter.web.controller"/>-->
+	<context:component-scan base-package="**.*controller" annotation-config="true"/>
+	<mvc:annotation-driven>
+		<!--Json converter-->
+		<mvc:message-converters>
+			<bean class="org.springframework.http.converter.StringHttpMessageConverter">
+				<property name="supportedMediaTypes">
+					<list>
+						<value>text/plain;charset=UTF-8</value>
+						<value>text/html;charset=UTF-8</value>
+					</list>
+				</property>
+			</bean>
+			<bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+				<property name="supportedMediaTypes">
+					<list>
+						<value>application/json;charset=UTF-8</value>
+					</list>
+				</property>
+			</bean>
+		</mvc:message-converters>
+	</mvc:annotation-driven>
 
 	<!-- 拦截器 -->
 	<mvc:interceptors>

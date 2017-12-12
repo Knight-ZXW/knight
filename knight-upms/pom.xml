@@ -6,7 +6,24 @@
 
     <groupId>com.knight</groupId>
     <artifactId>knight-upms</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
-    
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+    </properties>
+
+    <modules>
+        <module>knight-umps-common</module>
+        <module>knight-upms-dao</module>
+        <module>knight-upms-rpc-api</module>
+        <module>knight-upms-rpc-service</module>
+        <module>knight-upms-client</module>
+        <module>knight-upms-server</module>
+    </modules>
+
 </project>

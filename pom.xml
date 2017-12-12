@@ -13,6 +13,7 @@
         <module>knight-site</module>
         <module>knight-ucenter</module>
         <module>knight-api</module>
+        <module>knight-upms</module>
     </modules>
 
     <properties>

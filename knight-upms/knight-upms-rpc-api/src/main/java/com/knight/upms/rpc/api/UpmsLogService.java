@@ -6,7 +6,7 @@ import com.knight.upms.dao.model.UpmsLogExample;
 
 /**
 * UpmsLogService接口
-* Created by shuzheng on 2017/12/12.
+* Created by shuknight on 2017/12/12.
 */
 public interface UpmsLogService extends BaseService<UpmsLog, UpmsLogExample> {
 

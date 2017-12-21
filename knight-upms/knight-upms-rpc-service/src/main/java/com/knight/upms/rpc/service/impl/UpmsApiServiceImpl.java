@@ -58,7 +58,7 @@ public class UpmsApiServiceImpl implements UpmsApiService {
      * @return
      */
     @Override
-    @Cacheable(value = "zheng-upms-rpc-service-ehcache", key = "'selectUpmsPermissionByUpmsUserId_' + #upmsUserId")
+    @Cacheable(value = "knight-upms-rpc-service-ehcache", key = "'selectUpmsPermissionByUpmsUserId_' + #upmsUserId")
     public List<UpmsPermission> selectUpmsPermissionByUpmsUserIdByCache(Integer upmsUserId) {
         return selectUpmsPermissionByUpmsUserId(upmsUserId);
     }

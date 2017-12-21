@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  * 注册控制器
- * Created by shuzheng on 2017/5/2.
+ * Created by shuknight on 2017/5/2.
  */
 @Controller
 public class SignController extends BaseController {

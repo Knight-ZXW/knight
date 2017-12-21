@@ -23,7 +23,7 @@ import java.util.Set;
 
 /**
  * 用户认证和授权
- * Created by shuzheng on 2017/1/20.
+ * Created by shuknight on 2017/1/20.
  */
 public class UpmsRealm extends AuthorizingRealm {
 
@@ -77,7 +77,7 @@ public class UpmsRealm extends AuthorizingRealm {
         String username = (String) authenticationToken.getPrincipal();
         String password = new String((char[]) authenticationToken.getCredentials());
         // client无密认证
-        String upmsType = PropertiesFileUtil.getInstance("zheng-upms-client").get("zheng.upms.type");
+        String upmsType = PropertiesFileUtil.getInstance("knight-upms-client").get("knight.upms.type");
         if ("client".equals(upmsType)) {
             return new SimpleAuthenticationInfo(username, password, getName());
         }

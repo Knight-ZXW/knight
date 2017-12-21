@@ -25,7 +25,7 @@ public class UcenterWebInterceptor extends HandlerInterceptorAdapter {
         if (null != request.getHeader("X-Requested-With") && request.getHeader("X-Requested-With").equalsIgnoreCase("XMLHttpRequest")) {
             return true;
         }
-        // zheng-ui静态资源配置信息
+        // knight-ui静态资源配置信息
         String appName = PropertiesFileUtil.getInstance().get("app.name");
         String uiPath = PropertiesFileUtil.getInstance().get("knight.ui.path");
         request.setAttribute("appName", appName);

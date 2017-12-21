@@ -2,7 +2,7 @@ package com.knight.upms.common;
 
 /**
  * upms系统接口结果常量枚举类
- * Created by shuzheng on 2017/2/18.
+ * Created by shuknight on 2017/2/18.
  */
 public enum UpmsResultConstant {
 

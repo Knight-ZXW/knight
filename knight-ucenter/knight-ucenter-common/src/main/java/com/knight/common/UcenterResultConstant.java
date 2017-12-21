@@ -2,7 +2,7 @@ package com.knight.common;
 
 /**
  * ucenter系统接口结果常量枚举类
- * Created by shuzheng on 2017/4/26.
+ * Created by shuknight on 2017/4/26.
  */
 public enum UcenterResultConstant {
 

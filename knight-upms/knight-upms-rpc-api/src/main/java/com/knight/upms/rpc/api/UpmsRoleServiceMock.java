@@ -7,7 +7,7 @@ import com.knight.upms.dao.model.UpmsRoleExample;
 
 /**
 * 降级实现UpmsRoleService接口
-* Created by shuzheng on 2017/12/12.
+* Created by shuknight on 2017/12/12.
 */
 public class UpmsRoleServiceMock extends BaseServiceMock<UpmsRoleMapper, UpmsRole, UpmsRoleExample> implements UpmsRoleService {
 

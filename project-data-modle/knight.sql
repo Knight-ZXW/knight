@@ -4,7 +4,7 @@ Navicat MySQL Data Transfer
 Source Server         : 127.0.0.1
 Source Server Version : 50621
 Source Host           : localhost:3306
-Source Database       : zheng
+Source Database       : knight
 
 Target Server Type    : MYSQL
 Target Server Version : 50621
@@ -48,7 +48,7 @@ CREATE TABLE `cms_article` (
 INSERT INTO `cms_article` VALUES ('3', '0', '中国经济标题1', '1', '1', '1', '1', '1', '1', '1', '0', '资讯内容', '1', '0', '0', '1', '1489827019528', '1489827019528');
 INSERT INTO `cms_article` VALUES ('4', '0', '中国经济标题2', '2', '2', '2', '2', '2', '1', '1', '-1', '资讯内容', '1', '0', '0', '1', '1489827340870', '1489827340870');
 INSERT INTO `cms_article` VALUES ('5', '0', '中国经济标题3', '3', '3', '3', '3', '3', '1', '1', '1', '资讯内容', '1', '0', '0', '1', '1489827581414', '1489827581414');
-INSERT INTO `cms_article` VALUES ('8', '1', '日本从地球消失，我们倍(喜)感(大)心(普)痛(奔)', 'shuzheng', '网络', '', '日本消失,日本地震', '日本从地震中消失', '1', '1', '1', '好悲(gao)伤(xing)啊', '1', '12', '0', '1', '1489845594355', '1489845594355');
+INSERT INTO `cms_article` VALUES ('8', '1', '日本从地球消失，我们倍(喜)感(大)心(普)痛(奔)', 'shuknight', '网络', '', '日本消失,日本地震', '日本从地震中消失', '1', '1', '1', '好悲(gao)伤(xing)啊', '1', '12', '0', '1', '1489845594355', '1489845594355');
 INSERT INTO `cms_article` VALUES ('9', '0', '中国经济标题4', '4', '4', '4', '4', '4', '1', '1', '1', '资讯内容', '1', '0', '0', '1', '1490460546198', '1490460546198');
 INSERT INTO `cms_article` VALUES ('10', '0', '中国经济标题5', '5', '5', '5', '5', '5', '1', '1', '1', '资讯内容', '1', '0', '0', '1', '1490460567137', '1490460567137');
 INSERT INTO `cms_article` VALUES ('11', '0', '中国经济标题6', '6', '6', '6', '6', '6', '1', '1', '1', '资讯内容', '1', '0', '0', '1', '1490460575304', '1490460575304');
@@ -269,7 +269,7 @@ CREATE TABLE `cms_setting` (
 -- ----------------------------
 -- Records of cms_setting
 -- ----------------------------
-INSERT INTO `cms_setting` VALUES ('1', 'copyright', '© 2017 Zhang Shuzheng');
+INSERT INTO `cms_setting` VALUES ('1', 'copyright', '© 2017 Zhang Shuknight');
 
 -- ----------------------------
 -- Table structure for cms_system
@@ -316,7 +316,7 @@ CREATE TABLE `cms_tag` (
 -- ----------------------------
 INSERT INTO `cms_tag` VALUES ('1', 'JAVA', 'java标签', '', '1', 'java', '1', '1489585694864', '1489585694864');
 INSERT INTO `cms_tag` VALUES ('2', 'Android', 'android标签', '', '1', 'android', '1', '1489585720382', '1489585720382');
-INSERT INTO `cms_tag` VALUES ('3', 'zheng', 'zheng标签', '', '2', 'zheng', '1', '1489585815042', '1489585815042');
+INSERT INTO `cms_tag` VALUES ('3', 'knight', 'knight标签', '', '2', 'knight', '1', '1489585815042', '1489585815042');
 INSERT INTO `cms_tag` VALUES ('4', '谈恋爱', '谈恋爱标签', '', '1', 'love', '2', '1489585815043', '1489585815043');
 INSERT INTO `cms_tag` VALUES ('5', 'java', 'java标签', '', '1', 'java', '3', '1489585815044', '1489585815044');
 
@@ -897,11 +897,11 @@ CREATE TABLE `upms_system` (
 -- ----------------------------
 -- Records of upms_system
 -- ----------------------------
-INSERT INTO `upms_system` VALUES ('1', 'zmdi zmdi-shield-security', '/resources/zheng-admin/images/zheng-upms.png', '#29A176', 'http://upms.zhangshuzheng.cn:1111', '1', 'zheng-upms-server', '权限管理系统', '用户权限管理系统（RBAC细粒度用户权限、统一后台、单点登录、会话管理）', '1', '1');
-INSERT INTO `upms_system` VALUES ('2', 'zmdi zmdi-wikipedia', '/resources/zheng-admin/images/zheng-cms.png', '#455EC5', 'http://cms.zhangshuzheng.cn:2222', '1', 'zheng-cms-admin', '内容管理系统', '内容管理系统（门户、博客、论坛、问答等）', '2', '2');
-INSERT INTO `upms_system` VALUES ('3', 'zmdi zmdi-paypal-alt', '/resources/zheng-admin/images/zheng-pay.png', '#F06292', 'http://pay.zhangshuzheng.cn:3331', '1', 'zheng-pay-admin', '支付管理系统', '支付管理系统', '3', '3');
-INSERT INTO `upms_system` VALUES ('4', 'zmdi zmdi-account', '/resources/zheng-admin/images/zheng-ucenter.png', '#6539B4', 'http://ucenter.zhangshuzheng.cn:4441', '1', 'zheng-ucenter-home', '用户管理系统', '用户管理系统', '4', '4');
-INSERT INTO `upms_system` VALUES ('5', 'zmdi zmdi-cloud', '/resources/zheng-admin/images/zheng-oss.png', '#0B8DE5', 'http://oss.zhangshuzheng.cn:7771', '1', 'zheng-oss-web', '存储管理系统', '存储管理系统', '5', '5');
+INSERT INTO `upms_system` VALUES ('1', 'zmdi zmdi-shield-security', '/resources/knight-admin/images/knight-upms.png', '#29A176', 'http://upms.zhangshuknight.cn:1111', '1', 'knight-upms-server', '权限管理系统', '用户权限管理系统（RBAC细粒度用户权限、统一后台、单点登录、会话管理）', '1', '1');
+INSERT INTO `upms_system` VALUES ('2', 'zmdi zmdi-wikipedia', '/resources/knight-admin/images/knight-cms.png', '#455EC5', 'http://cms.zhangshuknight.cn:2222', '1', 'knight-cms-admin', '内容管理系统', '内容管理系统（门户、博客、论坛、问答等）', '2', '2');
+INSERT INTO `upms_system` VALUES ('3', 'zmdi zmdi-paypal-alt', '/resources/knight-admin/images/knight-pay.png', '#F06292', 'http://pay.zhangshuknight.cn:3331', '1', 'knight-pay-admin', '支付管理系统', '支付管理系统', '3', '3');
+INSERT INTO `upms_system` VALUES ('4', 'zmdi zmdi-account', '/resources/knight-admin/images/knight-ucenter.png', '#6539B4', 'http://ucenter.zhangshuknight.cn:4441', '1', 'knight-ucenter-home', '用户管理系统', '用户管理系统', '4', '4');
+INSERT INTO `upms_system` VALUES ('5', 'zmdi zmdi-cloud', '/resources/knight-admin/images/knight-oss.png', '#0B8DE5', 'http://oss.zhangshuknight.cn:7771', '1', 'knight-oss-web', '存储管理系统', '存储管理系统', '5', '5');
 
 -- ----------------------------
 -- Table structure for upms_user
@@ -925,8 +925,8 @@ CREATE TABLE `upms_user` (
 -- ----------------------------
 -- Records of upms_user
 -- ----------------------------
-INSERT INTO `upms_user` VALUES ('1', 'admin', '3038D9CB63B3152A79B8153FB06C02F7', '66f1b370c660445a8657bf8bf1794486', '张恕征', '/resources/zheng-admin/images/avatar.jpg', '', '469741414@qq.com', '1', '0', '1');
-INSERT INTO `upms_user` VALUES ('2', 'test', '285C9762F5F9046F5893F752DFAF3476', 'd2d0d03310444ad388a8b290b0fe8564', '张恕征', '/resources/zheng-admin/images/avatar.jpg', '', '469741414@qq.com', '1', '0', '1493394720495');
+INSERT INTO `upms_user` VALUES ('1', 'admin', '3038D9CB63B3152A79B8153FB06C02F7', '66f1b370c660445a8657bf8bf1794486', '张恕征', '/resources/knight-admin/images/avatar.jpg', '', '469741414@qq.com', '1', '0', '1');
+INSERT INTO `upms_user` VALUES ('2', 'test', '285C9762F5F9046F5893F752DFAF3476', 'd2d0d03310444ad388a8b290b0fe8564', '张恕征', '/resources/knight-admin/images/avatar.jpg', '', '469741414@qq.com', '1', '0', '1493394720495');
 
 -- ----------------------------
 -- Table structure for upms_user_organization

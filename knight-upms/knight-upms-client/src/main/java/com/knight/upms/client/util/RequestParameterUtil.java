@@ -7,7 +7,7 @@ import java.util.Map;
 
 /**
  * request参数工具类
- * Created by shuzheng on 2017/1/19.
+ * Created by shuknight on 2017/1/19.
  */
 public class RequestParameterUtil {
 

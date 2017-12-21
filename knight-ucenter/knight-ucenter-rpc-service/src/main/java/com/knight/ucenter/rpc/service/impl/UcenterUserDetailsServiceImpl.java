@@ -14,7 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 /**
 * UcenterUserDetailsService实现
-* Created by shuzheng on 2017/11/28.
+* Created by shuknight on 2017/11/28.
 */
 @Service
 @Transactional

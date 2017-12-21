@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  * 用户VOMapper
- * Created by shuzheng on 2017/01/07.
+ * Created by shuknight on 2017/01/07.
  */
 public interface UpmsApiMapper {
 

@@ -7,7 +7,7 @@ import com.knight.ucenter.dao.model.UcenterUserLogExample;
 
 /**
 * 降级实现UcenterUserLogService接口
-* Created by shuzheng on 2017/11/28.
+* Created by shuknight on 2017/11/28.
 */
 public class UcenterUserLogServiceMock extends BaseServiceMock<UcenterUserLogMapper, UcenterUserLog, UcenterUserLogExample> implements UcenterUserLogService {
 

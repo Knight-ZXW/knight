@@ -16,7 +16,7 @@ import java.util.*;
 
 /**
  * 基于redis的sessionDao，缓存共享session
- * Created by shuzheng on 2017/2/23.
+ * Created by shuknight on 2017/2/23.
  */
 public class UpmsSessionDao extends CachingSessionDAO {
 
@@ -64,7 +64,7 @@ public class UpmsSessionDao extends CachingSessionDAO {
             upmsSession.setAttribute("FORCE_LOGOUT", cacheUpmsSession.getAttribute("FORCE_LOGOUT"));
         }
         RedisUtil.set(KNIGHT_UPMS_SHIRO_SESSION_ID + "_" + session.getId(), SerializableUtil.serialize(session), (int) session.getTimeout() / 1000);
-        // 更新ZHENG_UPMS_SERVER_SESSION_ID、ZHENG_UPMS_SERVER_CODE过期时间 TODO
+        // 更新knight_UPMS_SERVER_SESSION_ID、knight_UPMS_SERVER_CODE过期时间 TODO
         _log.debug("doUpdate >>>>> sessionId={}", session.getId());
     }
 

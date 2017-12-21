@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 /**
  * UcenterApiService实现
- * Created by shuzheng on 2017/6/19.
+ * Created by shuknight on 2017/6/19.
  */
 @Service
 @Transactional

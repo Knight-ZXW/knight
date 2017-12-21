@@ -7,7 +7,7 @@ import com.knight.upms.dao.model.UpmsOrganizationExample;
 
 /**
 * 降级实现UpmsOrganizationService接口
-* Created by shuzheng on 2017/12/12.
+* Created by shuknight on 2017/12/12.
 */
 public class UpmsOrganizationServiceMock extends BaseServiceMock<UpmsOrganizationMapper, UpmsOrganization, UpmsOrganizationExample> implements UpmsOrganizationService {
 

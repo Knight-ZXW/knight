@@ -6,7 +6,7 @@ import com.knight.ucenter.dao.model.UcenterOauthExample;
 
 /**
 * UcenterOauthService接口
-* Created by shuzheng on 2017/11/28.
+* Created by shuknight on 2017/11/28.
 */
 public interface UcenterOauthService extends BaseService<UcenterOauth, UcenterOauthExample> {
 

@@ -6,7 +6,7 @@ import com.knight.upms.dao.model.UpmsOrganizationExample;
 
 /**
 * UpmsOrganizationService接口
-* Created by shuzheng on 2017/12/12.
+* Created by shuknight on 2017/12/12.
 */
 public interface UpmsOrganizationService extends BaseService<UpmsOrganization, UpmsOrganizationExample> {
 

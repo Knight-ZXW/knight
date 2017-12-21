@@ -5,7 +5,7 @@ import org.apache.shiro.session.mgt.SimpleSession;
 /**
  * 重写session
  * 为会话 添加了 在线状态的标识。
- * Created by shuzheng on 2017/2/27.
+ * Created by shuknight on 2017/2/27.
  */
 public class UpmsSession extends SimpleSession {
 

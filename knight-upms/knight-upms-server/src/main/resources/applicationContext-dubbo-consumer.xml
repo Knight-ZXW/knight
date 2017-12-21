@@ -7,7 +7,7 @@
        http://code.alibabatech.com/schema/dubbo
         http://code.alibabatech.com/schema/dubbo/dubbo.xsd ">
     <dubbo:application name="knight-upms-server"/>
-    <dubbo:registry file="./knight-upms-server-dubbo.cache" address="zookeeper://zkserver:2181"/>
+    <dubbo:registry file="./knight-upms-server-dubbo.cache" address="zookeeper://zkserver:4180"/>
     <!-- 订阅服务 -->
     <dubbo:consumer check="false"/>
     <!-- 系统 -->

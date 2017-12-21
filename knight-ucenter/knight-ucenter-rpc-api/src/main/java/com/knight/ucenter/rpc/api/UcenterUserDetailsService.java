@@ -6,7 +6,7 @@ import com.knight.ucenter.dao.model.UcenterUserDetailsExample;
 
 /**
 * UcenterUserDetailsService接口
-* Created by shuzheng on 2017/11/28.
+* Created by shuknight on 2017/11/28.
 */
 public interface UcenterUserDetailsService extends BaseService<UcenterUserDetails, UcenterUserDetailsExample> {
 

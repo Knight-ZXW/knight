@@ -11,4 +11,8 @@ import com.knight.upms.dao.model.UpmsSystemExample;
 */
 public class UpmsSystemServiceMock extends BaseServiceMock<UpmsSystemMapper, UpmsSystem, UpmsSystemExample> implements UpmsSystemService {
 
+    @Override
+    public UpmsSystem selectUpmsSystemByName(String name) {
+        return null;
+    }
 }

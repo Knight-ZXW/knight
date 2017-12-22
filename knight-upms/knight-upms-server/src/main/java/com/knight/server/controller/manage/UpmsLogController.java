@@ -1,7 +1,6 @@
-package com.knight.server.controller;
+package com.knight.server.controller.manage;
 
 import com.knight.common.base.BaseController;
-import com.knight.common.res.ServerResponse;
 import com.knight.upms.rpc.api.UpmsLogService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -27,8 +26,5 @@ public class UpmsLogController extends BaseController{
     public String index(){
         return "/manage/log/index.jsp";
     }
-    @RequestMapping(value="/manage/test", method = RequestMethod.GET)
-    public ServerResponse test(){
-        return ServerResponse.createBySuccess("test");
-    }
+
 }

@@ -61,12 +61,18 @@ public class ServerResponse<T> implements Serializable {
         return new ServerResponse<T>(ResponseCode.SUCCESS.getCode(),msg);
     }
 
+
     public static <T> ServerResponse<T> createBySuccess(T data){
         return new ServerResponse<T>(ResponseCode.SUCCESS.getCode(),data);
     }
 
     public static <T> ServerResponse<T> createBySuccess(String msg,T data){
         return new ServerResponse<T>(ResponseCode.SUCCESS.getCode(),msg,data);
+    }
+
+    //特殊情况下
+    public static <T> ServerResponse<T> createBySuccess(int code,String msg,T data){
+        return new ServerResponse<T>(code,msg,data);
     }
 
 

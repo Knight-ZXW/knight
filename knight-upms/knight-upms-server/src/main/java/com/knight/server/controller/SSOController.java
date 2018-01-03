@@ -133,7 +133,7 @@ public class SSOController {
 
     @ApiOperation(value = "登录")
     @RequestMapping(value = "/login", method = RequestMethod.GET)
-    public ServerResponse login(HttpServletRequest request) {
+    public Object login(HttpServletRequest request) {
         Subject subject = SecurityUtils.getSubject();
         Session session = subject.getSession();
         String serverSessionId = session.getId().toString();
@@ -146,13 +146,17 @@ public class SSOController {
             String username = (String) subject.getPrincipal();
 
             if (StringUtils.isBlank(backurl)) {
-
+                backurl = "/";
             } else {
-
+                if (backurl.contains("?")){
+                    backurl +="&upms_code="+code +"&upms_username="+username;
+                } else {
+                    backurl += "?upms_code="+code+"upms_username="+username;
+                }
             }
-            return null;
+            return "redirect:"+backurl;
         }
-        return null;
+        return "/sso/login.jsp";
     }
 
 
